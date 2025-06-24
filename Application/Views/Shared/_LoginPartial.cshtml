@@ -6,14 +6,14 @@
 @if (signInManager.IsSignedIn(User))
 {
     <li>
-        <span class="dropdown-item-text">Hello, @userManager.GetUserName(User)!</span>
+        <span class="dropdown-item-text">@Localizer["Hello"], @userManager.GetUserName(User)!</span>
     </li>
     <li><hr class="dropdown-divider" /></li>
     <li>
         <form asp-controller="Account" asp-action="Logout" method="post" class="dropdown-item p-0">
-            <button type="submit" class="btn btn-link dropdown-item">
-                <i class="bi bi-box-arrow-right"></i> Logout
-            </button>
+            <a class="btn btn-link dropdown-item">
+                <i class="bi bi-box-arrow-right"></i> @Localizer["Logout"]
+            </a>
         </form>
     </li>
 }
@@ -21,12 +21,12 @@ else
 {
     <li>
         <a class="dropdown-item" asp-controller="Account" asp-action="Login">
-            <i class="bi bi-person"></i> Login
+            <i class="bi bi-person"></i> @Localizer["Login"]
         </a>
     </li>
     <li>
         <a class="dropdown-item" asp-controller="Account" asp-action="Register">
-            <i class="bi bi-person-plus"></i> Register
+            <i class="bi bi-person-plus"></i> @Localizer["Register"]
         </a>
     </li>
 }

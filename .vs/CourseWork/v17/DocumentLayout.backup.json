@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "D:\\Programo\\Classes\\CourseWork\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\settings\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\settings\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\resources\\views\\settings\\settings.en-us.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\resources\\views\\settings\\settings.en-us.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,67 +30,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Application\\Views\\Account\\Register.cshtml",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "Application\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-21T18:01:06.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Application\\Views\\Account\\Login.cshtml",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "Application\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAzAAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "Application\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvxMAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-21T18:00:53.332Z",
+              "WhenOpened": "2025-06-24T19:08:58.038Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Application\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Application\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-21T17:08:57.676Z",
+              "Title": "Settings.en-US.resx",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Resources\\Views\\Settings\\Settings.en-US.resx",
+              "RelativeDocumentMoniker": "Application\\Resources\\Views\\Settings\\Settings.en-US.resx",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Resources\\Views\\Settings\\Settings.en-US.resx",
+              "RelativeToolTip": "Application\\Resources\\Views\\Settings\\Settings.en-US.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-06-24T19:07:04.341Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "Application\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "Application\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Settings.cshtml",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Settings\\Settings.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Settings\\Settings.cshtml",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Settings\\Settings.cshtml",
+              "RelativeToolTip": "Application\\Views\\Settings\\Settings.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-21T17:00:35.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Home.cshtml",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Home\\Home.cshtml",
-              "RelativeDocumentMoniker": "Application\\Views\\Home\\Home.cshtml",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Home\\Home.cshtml",
-              "RelativeToolTip": "Application\\Views\\Home\\Home.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-21T17:04:20.735Z",
+              "WhenOpened": "2025-06-24T19:07:00.15Z",
               "EditorCaption": ""
             }
           ]

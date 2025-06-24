@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Application.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : CustomController
     {
         private readonly ILogger<HomeController> _logger;
         private readonly UserManager<UserModel> _userManager;

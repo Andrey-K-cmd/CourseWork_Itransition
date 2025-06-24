@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Application.Controllers
 {
-    public class AccountController : Controller
+    public class AccountController : CustomController
     {
         private readonly SignInManager<UserModel> _signInManager;
         private readonly UserManager<UserModel> _userManager;
