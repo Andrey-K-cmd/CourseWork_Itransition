@@ -35,7 +35,6 @@ namespace Application
                 options.SupportedCultures = supportedCultures;
                 options.SupportedUICultures = supportedCultures;
 
-                // Чтобы выбирать язык вручную через куки
                 options.RequestCultureProviders.Insert(0, new CookieRequestCultureProvider());
             });
 

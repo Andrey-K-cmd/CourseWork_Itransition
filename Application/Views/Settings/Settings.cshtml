@@ -8,13 +8,13 @@
     <hr />
     <label>@Localizer["Theme"]</label>
     <select class="form-select mb-3" name="theme">
-        <option value="default">@Localizer["Default"]</option>
-        <option value="darkly">@Localizer["Darkly"]</option>
+        <option value="default" selected="@(ViewData["CurrentTheme"]?.ToString() == "default")">@Localizer["Default"]</option>
+        <option value="darkly" selected="@(ViewData["CurrentTheme"]?.ToString() == "darkly")">@Localizer["Darkly"]</option>
     </select>
     <label>@Localizer["Language"]</label>
     <select class="form-select mb-4" name="lang">
-        <option value="en-EN">@Localizer["English"]</option>
-        <option value="ja-JP">@Localizer["Japanese"]</option>
+        <option value="en-US" selected="@(ViewData["CurrentLang"]?.ToString() == "en-US")">@Localizer["English"]</option>
+        <option value="ja-JP" selected="@(ViewData["CurrentLang"]?.ToString() == "ja-JP")">@Localizer["Japanese"]</option>
     </select>
     <div class="text-center">
         <button type="submit" class="btn btn-primary">@Localizer["Apply"]</button>

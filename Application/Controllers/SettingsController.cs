@@ -8,8 +8,22 @@ namespace Application.Controllers
         [HttpGet]
         public IActionResult Settings()
         {
+            var theme = Request.Cookies["Theme"] ?? "default";
+
+            var langCookie = Request.Cookies[CookieRequestCultureProvider.DefaultCookieName];
+            var lang = "en-US";
+            if (!string.IsNullOrEmpty(langCookie))
+            {
+                var result = CookieRequestCultureProvider.ParseCookieValue(langCookie);
+                lang = result?.UICultures.FirstOrDefault().Value ?? "en-US";
+            }
+
+            ViewData["CurrentTheme"] = theme;
+            ViewData["CurrentLang"] = lang;
+
             return View();
         }
+
 
         [HttpPost]
         public IActionResult ApplySettings(string theme, string lang)
