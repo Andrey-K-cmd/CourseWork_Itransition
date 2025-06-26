@@ -4,26 +4,12 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="table-responsive">
-    <table class="table table-hover">
-        <thead>
-            <tr>
-                <th>@Localizer["Id"]</th>
-                <th>@Localizer["Name"]</th>
-                <th>@Localizer["Email"]</th>
-                <th>@Localizer["Password"]</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var user in Model)
-            {
-                <tr>
-                    <th>@user.Id</th>
-                    <th>@user.FullName</th>
-                    <th>@user.Email</th>
-                    <th>@user.PasswordHash</th>
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>
+@if (User.IsInRole("User"))
+{
+    <h2 class="text-center">Hello User</h2>
+}
+
+@if (User.IsInRole("Admin"))
+{
+    <h2 class="text-center">Hello Admin</h2>
+}

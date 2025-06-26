@@ -6,12 +6,13 @@ using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using System.Globalization;
+using System.Threading.Tasks;
 
 namespace Application
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
@@ -52,7 +53,8 @@ namespace Application
                 options.User.RequireUniqueEmail = true;
                 options.SignIn.RequireConfirmedEmail = false;
 
-            }).AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+            }).AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddDefaultTokenProviders();
 
             var app = builder.Build();
 
@@ -76,7 +78,21 @@ namespace Application
                 name: "default",
                 pattern: "{controller=Home}/{action=Home}/{id?}");
 
-            app.Run();
+            using (var scope = app.Services.CreateScope())
+            {
+                var manager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+                string[] roles = { "Admin", "User" };
+
+                foreach (var role in roles)
+                {
+                    if (!await manager.RoleExistsAsync(role))
+                    {
+                        await manager.CreateAsync(new IdentityRole(role));
+                    }
+                }
+            }
+
+                app.Run();
         }
     }
 }

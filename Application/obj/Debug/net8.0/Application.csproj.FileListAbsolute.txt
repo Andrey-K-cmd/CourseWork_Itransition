@@ -151,3 +151,8 @@ D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resource
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Shared._LoginPartial.ja-JP.resources
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Account.Login.en-US.resources
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Account.Login.ja-JP.resources
+D:\Programo\Classes\CourseWork\Application\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\Programo\Classes\CourseWork\Application\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.MvcApplicationPartsAssemblyInfo.cs
+D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Admin.Admin.en-US.resources
+D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Admin.Admin.ja-JP.resources

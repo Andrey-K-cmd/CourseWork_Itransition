@@ -62,6 +62,7 @@ namespace Application.Controllers
 
                 if (output.Succeeded)
                 {
+                    await _userManager.AddToRoleAsync(user, "User");
                     await _signInManager.SignInAsync(user, isPersistent: false);
                     return RedirectToAction("Home", "Home");
                 }
@@ -79,6 +80,7 @@ namespace Application.Controllers
             return View(model);
         }
 
+        [HttpPost]
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();

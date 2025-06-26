@@ -36,6 +36,14 @@
                                 <i class="bi bi-gear"></i> @Localizer["Settings"]
                             </a>
                         </li>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li>
+                                <a class="dropdown-item" asp-controller="Admin" asp-action="Admin">
+                                    <i class="bi bi-star"></i> @Localizer["Admin Page"]
+                                </a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>
