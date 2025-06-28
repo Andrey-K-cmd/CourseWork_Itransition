@@ -123,10 +123,22 @@
   <data name="Email" xml:space="preserve">
     <value>メールアドレス</value>
   </data>
-  <data name="Id" xml:space="preserve">
-    <value>Id</value>
-  </data>
   <data name="Name" xml:space="preserve">
     <value>名前</value>
+  </data>
+  <data name="Unblock" xml:space="preserve">
+    <value>ブロック解除</value>
+  </data>
+  <data name="Add to admin" xml:space="preserve">
+    <value>管理者に追加</value>
+  </data>
+  <data name="Delete from admin" xml:space="preserve">
+    <value>管理者から削除</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>ステータス</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>役割</value>
   </data>
 </root>

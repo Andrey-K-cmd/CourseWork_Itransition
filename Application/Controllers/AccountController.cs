@@ -25,6 +25,14 @@ namespace Application.Controllers
         {
             if (ModelState.IsValid)
             {
+                var user = await _userManager.FindByEmailAsync(model.Email);
+
+                if (user != null && user.IsBlocked)
+                {
+                    ModelState.AddModelError("", "Your account is blocked");
+                    return View();
+                }
+
                 var output = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
 
                 if (output.Succeeded)
@@ -55,7 +63,8 @@ namespace Application.Controllers
                 {
                     FullName = model.Name,
                     Email = model.Email,
-                    UserName = model.Email
+                    UserName = model.Email,
+                    IsBlocked = false
                 };
 
                 var output = await _userManager.CreateAsync(user, model.Password);

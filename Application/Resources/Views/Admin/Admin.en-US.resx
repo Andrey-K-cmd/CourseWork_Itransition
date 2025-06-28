@@ -123,10 +123,22 @@
   <data name="Email" xml:space="preserve">
     <value>Email</value>
   </data>
-  <data name="Id" xml:space="preserve">
-    <value>Id</value>
-  </data>
   <data name="Name" xml:space="preserve">
     <value>Name</value>
+  </data>
+  <data name="Unblock" xml:space="preserve">
+    <value>Unblock</value>
+  </data>
+  <data name="Add to admin" xml:space="preserve">
+    <value>Add to admin</value>
+  </data>
+  <data name="Delete from admin" xml:space="preserve">
+    <value>Delete from admin</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Role</value>
   </data>
 </root>
