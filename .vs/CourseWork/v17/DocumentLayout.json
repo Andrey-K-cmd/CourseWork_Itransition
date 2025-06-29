@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "D:\\Programo\\Classes\\CourseWork\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\form\\newform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\form\\newform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\admin\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\admin\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\controllers\\form\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\controllers\\form\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\models\\form\\option.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\models\\form\\option.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\models\\form\\form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\models\\form\\form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\models\\form\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\models\\form\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,41 +42,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Admin.cshtml",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Admin\\Admin.cshtml",
-              "RelativeDocumentMoniker": "Application\\Views\\Admin\\Admin.cshtml",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Admin\\Admin.cshtml",
-              "RelativeToolTip": "Application\\Views\\Admin\\Admin.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-28T14:55:09.115Z",
+              "DocumentIndex": 5,
+              "Title": "Question.cs",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\Form\\Question.cs",
+              "RelativeDocumentMoniker": "Application\\Models\\Form\\Question.cs",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\Form\\Question.cs",
+              "RelativeToolTip": "Application\\Models\\Form\\Question.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T16:42:42.743Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Application\\Controllers\\AdminController.cs",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Application\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAkwFAAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Option.cs",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\Form\\Option.cs",
+              "RelativeDocumentMoniker": "Application\\Models\\Form\\Option.cs",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\Form\\Option.cs",
+              "RelativeToolTip": "Application\\Models\\Form\\Option.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T14:15:47.437Z",
+              "WhenOpened": "2025-06-29T16:42:42.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form.cs",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\Form\\Form.cs",
+              "RelativeDocumentMoniker": "Application\\Models\\Form\\Form.cs",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\Form\\Form.cs",
+              "RelativeToolTip": "Application\\Models\\Form\\Form.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T16:42:41.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Application\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Application\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAowFUAAAARAAAAAAAAAA==",
+              "Title": "NewForm.cshtml",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Form\\NewForm.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Form\\NewForm.cshtml",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Form\\NewForm.cshtml",
+              "RelativeToolTip": "Application\\Views\\Form\\NewForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T16:30:02.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormController.cs",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Controllers\\Form\\FormController.cs",
+              "RelativeDocumentMoniker": "Application\\Controllers\\Form\\FormController.cs",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Controllers\\Form\\FormController.cs",
+              "RelativeToolTip": "Application\\Controllers\\Form\\FormController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T14:50:41.153Z",
+              "WhenOpened": "2025-06-29T15:43:27.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.cshtml",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Home\\Home.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Home\\Home.cshtml",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Home\\Home.cshtml",
+              "RelativeToolTip": "Application\\Views\\Home\\Home.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T16:00:15.098Z",
               "EditorCaption": ""
             }
           ]

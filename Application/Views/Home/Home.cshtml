@@ -1,15 +1,13 @@
-﻿@using Application.Models;
-@model List<UserModel>;
+﻿@model Application.Models.Form.Form
 @{
     ViewData["Title"] = "Home Page";
 }
 
-@if (User.IsInRole("User"))
+@if (User.IsInRole("User") || User.IsInRole("Admin"))
 {
-    <h2 class="text-center">Hello User</h2>
-}
-
-@if (User.IsInRole("Admin"))
-{
-    <h2 class="text-center">Hello Admin</h2>
+    <form style="max-width: 300px; margin:auto; margin-top: 50px" asp-controller="Form" asp-action="NewForm" method="post">
+        <div class="mb-3 text-center">
+            <button type="submit" class="btn btn-primary">Create Form</button>
+        </div>
+    </form>
 }

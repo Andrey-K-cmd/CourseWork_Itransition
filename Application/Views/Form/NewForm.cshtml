@@ -1,0 +1,31 @@
+﻿@model Application.Models.Form.Form
+@{
+    ViewData["Title"] = "New Form";
+}
+
+<form asp-action="SaveForm" method="post">
+    <div class="mb-3">
+        <button type="button" class="btn btn-secondary" onclick="addQuestion()">Add question</button>
+        <button type="submit" class="btn btn-primary">Save Form</button>
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+    </div>
+    <div id="questions"></div>
+</form>
+
+@section Scripts {
+    <script>
+        let questionCount = 0;
+
+        function addQuestion() {
+            const container = document.getElementById("questions");
+            const html = `
+                <div class="mb-3">
+                    <input name="Questions[${questionCount}].Text" class="form-control" placeholder="Текст вопроса" />
+                </div>`;
+            container.insertAdjacentHTML("beforeend", html);
+            questionCount++;
+        }
+    </script>
+}
+
