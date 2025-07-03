@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System.Globalization;
 
-namespace Application.Controllers
+namespace Application.Controllers.Custom
 {
     public class CustomController : Controller
     {

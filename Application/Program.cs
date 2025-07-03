@@ -1,5 +1,5 @@
 using Application.Data;
-using Application.Models;
+using Application.Models.User;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Razor;

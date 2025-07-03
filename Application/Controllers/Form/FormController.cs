@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using Forms = Application.Models.Form;
+using System.Security.Claims;
+using Application.Controllers.Custom;
 namespace Application.Controllers.Form
 {
     public class FormController : CustomController
@@ -16,42 +18,26 @@ namespace Application.Controllers.Form
 
         public IActionResult NewForm()
         {
-            return View(new Forms.Form());
+            return View(new Forms.FormViewModel());
         }
 
         [HttpPost]
-        public async Task<IActionResult> SaveForm(Forms.Form form)
+        public async Task<IActionResult> SaveForm(Forms.FormViewModel form)
         {
+            form.UserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "";
+            ModelState.Remove("UserId");
+
             if (ModelState.IsValid)
             {
                 _context.Forms.Add(form);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("NewForm", new {id = form.Id});
+                return RedirectToAction("CompiledForm", new {id = form.Id});
             }
 
-            return View(form);
+            return View("NewForm", form);
         }
 
-        public IActionResult AddQuestion(int formId)
-        {
-            var question = new Forms.Question { FormId = formId };
-            return View(question);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> AddQuestion(Forms.Question question)
-        {
-            if (!ModelState.IsValid)
-            {
-                _context.Questions.Add(question);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Details", new {id = question.FormId});
-            }
-
-            return View(question);
-        }
-
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> CompiledForm(int id)
         {
             var form = await _context.Forms.
                 Include(x => x.Questions).
@@ -65,6 +51,26 @@ namespace Application.Controllers.Form
 
             return View(form);
 
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> FindForm(string title)
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (string.IsNullOrEmpty(title) || userId == null)
+                return RedirectToAction("Home", "Home");
+
+            var form = await _context.Forms
+                .FirstOrDefaultAsync(f => f.Title.ToLower() == title.ToLower());
+
+            if (form == null)
+            {
+                TempData["NotFound"] = "Form not found.";
+                return RedirectToAction("Home", "Home");
+            }
+
+            return RedirectToAction("CompiledForm", new { id = form.Id });
         }
     }
 }

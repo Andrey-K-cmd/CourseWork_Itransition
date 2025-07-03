@@ -21,13 +21,14 @@
                 <span class="navbar-brand">
                     <i class="bi bi-layout-text-sidebar-reverse"></i> @Localizer["Forms"]
                 </span>
-                <form class="d-flex my-2 my-md-0" role="search">
-                    <input class="form-control me-2 rounded-3" type="search" placeholder="@Localizer["Search"]" aria-label="Search">
+                <form class="d-flex my-2 my-md-0" role="search" method="get" asp-controller="Form" asp-action="FindForm">
+                    <input class="form-control me-2 rounded-3" type="search" name="title" placeholder="@Localizer["Search"]" required />
                     <button class="btn btn-primary rounded-3 me-2" type="submit">@Localizer["Search"]</button>
                 </form>
+
                 <div class="dropdown">
                     <a class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                        <i class="bi bi-person-circle"></i>
+                        <i class="bi bi-person-circle"></i> Account
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
                         <partial name="_LoginPartial" />

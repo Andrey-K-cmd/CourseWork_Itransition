@@ -1,8 +1,10 @@
-﻿using Application.Models;
+﻿using Application.Controllers.Custom;
+using Application.Models.Account;
+using Application.Models.User;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Application.Controllers
+namespace Application.Controllers.Account
 {
     public class AccountController : CustomController
     {

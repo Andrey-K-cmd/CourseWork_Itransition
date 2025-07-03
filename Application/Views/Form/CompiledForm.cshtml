@@ -1,0 +1,28 @@
+﻿@model Application.Models.Form.FormViewModel
+
+@{
+    ViewData["Title"] = "Compiled Form";
+    Layout = "~/Views/Shared/_BackLayout.cshtml";
+}
+
+<h2 class="mb-4">@Model.Title</h2>
+
+@for (int i = 0; i < Model.Questions.Count; i++)
+{
+    var question = Model.Questions.ElementAt(i);
+    <div class="mb-3 p-3 border rounded">
+        <h5>Question @(i + 1):</h5>
+        <p><strong>Type:</strong> @question.Type</p>
+        <p><strong>Text:</strong> @question.Text</p>
+
+        @if (question.Options != null && question.Options.Any())
+        {
+            <ul>
+                @foreach (var option in question.Options)
+                {
+                    <li>@option.Text</li>
+                }
+            </ul>
+        }
+    </div>
+}

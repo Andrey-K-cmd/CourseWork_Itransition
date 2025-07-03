@@ -1,7 +1,8 @@
-﻿using Microsoft.AspNetCore.Localization;
+﻿using Application.Controllers.Custom;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Application.Controllers
+namespace Application.Controllers.Settings
 {
     public class SettingsController : CustomController
     {

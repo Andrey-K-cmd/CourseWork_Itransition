@@ -1,15 +1,34 @@
-﻿@model Application.Models.Form.Form
+﻿@model Application.Models.Form.FormViewModel
+
 @{
     ViewData["Title"] = "New Form";
+    Layout = "~/Views/Shared/_BackLayout.cshtml";
 }
 
-<form asp-action="SaveForm" method="post">
-    <div class="mb-3">
-        <button type="button" class="btn btn-secondary" onclick="addQuestion()">Add question</button>
+<form method="post" asp-controller="Form" asp-action="SaveForm">
+    <div class="mb-3 d-flex align-items-center justify-content-between flex-wrap gap-2">
+        <div class="d-flex gap-2">
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                    Add Question
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" onclick="addTextQuestion()">Add Text-Question</a></li>
+                    <li><a class="dropdown-item" onclick="addRadioQuestion()">Add One Option</a></li>
+                    <li><a class="dropdown-item" onclick="addCheckboxQuestion()">Add Multiple Options</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-danger" onclick="removeQuestion()">Remove Questions</a>
+        </div>
         <button type="submit" class="btn btn-primary">Save Form</button>
-        <label asp-for="Title" class="form-label"></label>
-        <input asp-for="Title" class="form-control" />
     </div>
+
+    <div class="form-floating mb-3">
+        <input asp-for="Title" class="form-control" placeholder="Title" />
+        <label asp-for="Title" class="form-label">Title</label>
+        <div asp-validation-summary="All" class="text-danger mb-3"></div>
+    </div>
+
     <div id="questions"></div>
 </form>
 
@@ -17,15 +36,93 @@
     <script>
         let questionCount = 0;
 
-        function addQuestion() {
+        function addTextQuestion() {
             const container = document.getElementById("questions");
             const html = `
-                <div class="mb-3">
-                    <input name="Questions[${questionCount}].Text" class="form-control" placeholder="Текст вопроса" />
+                <div class="mb-3 border p-3 rounded question-block">
+                    <input type="hidden" name="Questions[${questionCount}].Type" value="0" />
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-label">Question ${questionCount + 1}:</label>
+                    <input class="form-control mb-2" name="Questions[${questionCount}].Text" placeholder="Enter question" />
                 </div>`;
             container.insertAdjacentHTML("beforeend", html);
             questionCount++;
         }
+
+        function addRadioQuestion() {
+            const container = document.getElementById("questions");
+            const html = `
+                <div class="mb-3 border p-3 rounded question-block">
+                    <input type="hidden" name="Questions[${questionCount}].Type" value="1" />
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-label">Question ${questionCount + 1}:</label>
+                    <input class="form-control mb-2" name="Questions[${questionCount}].Text" placeholder="Enter question" />
+                    <div>
+                        <input class="form-control mb-1" name="Questions[${questionCount}].Options[0].Text" placeholder="Option 1" />
+                        <input class="form-control mb-1" name="Questions[${questionCount}].Options[1].Text" placeholder="Option 2" />
+                    </div>
+                </div>`;
+            container.insertAdjacentHTML("beforeend", html);
+            questionCount++;
+        }
+
+        function addCheckboxQuestion() {
+            const container = document.getElementById("questions");
+            const html = `
+                <div class="mb-3 border p-3 rounded question-block">
+                    <input type="hidden" name="Questions[${questionCount}].Type" value="2" />
+                    <input class="form-check-input" type="checkbox" />
+                    <label class="form-label">Question ${questionCount + 1}:</label>
+                    <input class="form-control mb-2" name="Questions[${questionCount}].Text" placeholder="Enter question" />
+                    <div>
+                        <input class="form-control mb-1" name="Questions[${questionCount}].Options[0].Text" placeholder="Option 1" />
+                        <input class="form-control mb-1" name="Questions[${questionCount}].Options[1].Text" placeholder="Option 2" />
+                    </div>
+                </div>`;
+            container.insertAdjacentHTML("beforeend", html);
+            questionCount++;
+        }
+
+        function removeQuestion() {
+            const container = document.getElementById("questions");
+            const blocks = container.querySelectorAll(".question-block");
+
+            blocks.forEach(block => {
+                const checkbox = block.querySelector(".form-check-input");
+                if (checkbox && checkbox.checked) {
+                    block.remove();
+                }
+            });
+
+            const remainingBlocks = container.querySelectorAll(".question-block");
+            questionCount = remainingBlocks.length;
+
+            remainingBlocks.forEach((block, i) => {
+                const typeInput = block.querySelector('input[type="hidden"]');
+                if (typeInput) {
+                    typeInput.name = `Questions[${i}].Type`;
+                }
+
+                const checkbox = block.querySelector(".form-check-input");
+                if (checkbox) {
+                    checkbox.name = `Questions[${i}].Selected`;
+                }
+
+                const questionText = block.querySelector('input.form-control[placeholder="Enter question"]');
+                if (questionText) {
+                    questionText.name = `Questions[${i}].Text`;
+                }
+
+                const optionInputs = block.querySelectorAll('input.form-control[placeholder^="Option"]');
+                optionInputs.forEach((optInput, j) => {
+                    optInput.name = `Questions[${i}].Options[${j}].Text`;
+                });
+
+                const label = block.querySelector('label.form-label');
+                if (label) {
+                    label.textContent = `Question ${i + 1}:`;
+                }
+            });    
+        }
     </script>
 }
-

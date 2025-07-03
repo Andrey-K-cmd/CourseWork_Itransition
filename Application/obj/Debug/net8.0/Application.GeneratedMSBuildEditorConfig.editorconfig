@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Programo/Classes/CourseWork/Application/Views/Form/CompiledForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVxDb21waWxlZEZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Programo/Classes/CourseWork/Application/Views/Form/NewForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybVxOZXdGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,8 +48,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcU2V0dGluZ3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Programo/Classes/CourseWork/Application/Views/Shared/_AccountLayout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BY2NvdW50TGF5b3V0LmNzaHRtbA==
+[D:/Programo/Classes/CourseWork/Application/Views/Shared/_BackLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9CYWNrTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Programo/Classes/CourseWork/Application/Views/Shared/_LoginPartial.cshtml]

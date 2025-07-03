@@ -1,9 +1,10 @@
 ﻿@using Application.Models;
+@using Application.Models.Account
 @model RegisterViewModel;
 
 @{
     ViewData["Title"] = "Register Page";
-    Layout = "~/Views/Shared/_AccountLayout.cshtml";
+    Layout = "~/Views/Shared/_BackLayout.cshtml";
 }
 
 <form style="max-width: 300px; margin:auto; margin-top: 50px" asp-action="Register" method="post">

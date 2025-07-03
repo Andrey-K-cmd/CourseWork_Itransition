@@ -1,10 +1,11 @@
-﻿using Application.Models;
+﻿using Application.Controllers.Custom;
+using Application.Models.User;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
-namespace Application.Controllers
+namespace Application.Controllers.Admin
 {
     [Authorize(Roles = "Admin")]
     public class AdminController : CustomController

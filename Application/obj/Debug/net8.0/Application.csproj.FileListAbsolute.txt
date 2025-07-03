@@ -25,7 +25,6 @@ D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\staticwebassets.buil
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\staticwebassets.build.json.cache
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\staticwebassets.development.json
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.dll
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\refint\Application.dll
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.pdb
@@ -156,3 +155,4 @@ D:\Programo\Classes\CourseWork\Application\bin\Debug\net8.0\Microsoft.Extensions
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.MvcApplicationPartsAssemblyInfo.cs
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Admin.Admin.en-US.resources
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Admin.Admin.ja-JP.resources
+D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
