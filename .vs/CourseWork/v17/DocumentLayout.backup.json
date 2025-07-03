@@ -3,32 +3,8 @@
   "WorkspaceRootPath": "D:\\Programo\\Classes\\CourseWork\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\settings\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\settings\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\form\\newform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\form\\newform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\form\\compiledform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\form\\compiledform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\admin\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\admin\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\controllers\\form\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\controllers\\form\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,101 +14,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Home.cshtml",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Home\\Home.cshtml",
-              "RelativeDocumentMoniker": "Application\\Views\\Home\\Home.cshtml",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Home\\Home.cshtml",
-              "RelativeToolTip": "Application\\Views\\Home\\Home.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T10:29:12.891Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Settings.cshtml",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Settings\\Settings.cshtml",
-              "RelativeDocumentMoniker": "Application\\Views\\Settings\\Settings.cshtml",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Settings\\Settings.cshtml",
-              "RelativeToolTip": "Application\\Views\\Settings\\Settings.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T10:29:08.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NewForm.cshtml",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Form\\NewForm.cshtml",
-              "RelativeDocumentMoniker": "Application\\Views\\Form\\NewForm.cshtml",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Form\\NewForm.cshtml",
-              "RelativeToolTip": "Application\\Views\\Form\\NewForm.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T10:29:03.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CompiledForm.cshtml",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Form\\CompiledForm.cshtml",
-              "RelativeDocumentMoniker": "Application\\Views\\Form\\CompiledForm.cshtml",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Form\\CompiledForm.cshtml",
-              "RelativeToolTip": "Application\\Views\\Form\\CompiledForm.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T10:29:01.021Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Admin.cshtml",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Admin\\Admin.cshtml",
-              "RelativeDocumentMoniker": "Application\\Views\\Admin\\Admin.cshtml",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Admin\\Admin.cshtml",
-              "RelativeToolTip": "Application\\Views\\Admin\\Admin.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T10:28:57.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Application\\Views\\Account\\Register.cshtml",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "Application\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T10:28:54.812Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Application\\Views\\Account\\Login.cshtml",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "Application\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-03T10:28:41.8Z",
+              "DocumentIndex": 0,
+              "Title": "FormController.cs",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Controllers\\Form\\FormController.cs",
+              "RelativeDocumentMoniker": "Application\\Controllers\\Form\\FormController.cs",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Controllers\\Form\\FormController.cs",
+              "RelativeToolTip": "Application\\Controllers\\Form\\FormController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T10:42:32.049Z",
               "EditorCaption": ""
             }
           ]
