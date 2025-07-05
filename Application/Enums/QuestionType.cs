@@ -4,6 +4,6 @@
     {
         Text,
         Checkbox,
-        RadioBtn
+        RadioButton
     }
 }

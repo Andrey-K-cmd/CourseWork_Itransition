@@ -42,6 +42,7 @@ namespace Application.Controllers.Form
             var form = await _context.Forms.
                 Include(x => x.Questions).
                 ThenInclude(y => y.Options).
+                Include(z => z.User).
                 FirstOrDefaultAsync(z => z.Id == id);
 
             if (form == null)
@@ -58,17 +59,18 @@ namespace Application.Controllers.Form
         {
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-            if (string.IsNullOrEmpty(title) || userId == null)
-                return RedirectToAction("Home", "Home");
-
-            var form = await _context.Forms
-                .FirstOrDefaultAsync(f => f.Title.ToLower() == title.ToLower());
-
-            if (form == null)
+            if (userId == null)
             {
-                TempData["NotFound"] = "Form not found.";
                 return RedirectToAction("Home", "Home");
             }
+
+            var form = await _context.Forms
+                .FromSqlRaw("SELECT * FROM \"Forms\" WHERE \"TitleVector\" @@ plainto_tsquery({0}) AND \"UserId\" = {1}", title, userId)
+                .FirstOrDefaultAsync();
+
+
+            if (form == null)
+                return RedirectToAction("Home", "Home");
 
             return RedirectToAction("CompiledForm", new { id = form.Id });
         }

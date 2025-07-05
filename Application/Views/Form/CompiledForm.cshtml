@@ -1,28 +1,57 @@
-﻿@model Application.Models.Form.FormViewModel
+﻿@using Application.Enums
+@model Application.Models.Form.FormViewModel
 
 @{
-    ViewData["Title"] = "Compiled Form";
+    ViewData["Title"] = "Fill Form";
     Layout = "~/Views/Shared/_BackLayout.cshtml";
 }
 
-<h2 class="mb-4">@Model.Title</h2>
+<div class="mb-3 d-flex align-items-center justify-content-between flex-wrap gap-2">
+    <h2>@Model.Title</h2>
+    <h2 class="text-end">Author: @Model.User?.FullName</h2>
+</div>
 
-@for (int i = 0; i < Model.Questions.Count; i++)
-{
-    var question = Model.Questions.ElementAt(i);
-    <div class="mb-3 p-3 border rounded">
-        <h5>Question @(i + 1):</h5>
-        <p><strong>Type:</strong> @question.Type</p>
-        <p><strong>Text:</strong> @question.Text</p>
+<form method="post">
+    <input type="hidden" name="FormId" value="@Model.Id" />
 
-        @if (question.Options != null && question.Options.Any())
-        {
-            <ul>
-                @foreach (var option in question.Options)
-                {
-                    <li>@option.Text</li>
-                }
-            </ul>
-        }
-    </div>
-}
+    @for (int i = 0; i < Model.Questions.Count; i++)
+    {
+        var question = Model.Questions.ElementAt(i);
+        <div class="mb-4 border p-3 rounded">
+            <input type="hidden" name="Answers[@i].QuestionId" value="@question.Id" />
+            <p><strong>@(i + 1). @question.Text</strong></p>
+
+            @switch (question.Type)
+            {
+                case QuestionType.Text:
+                    <input type="text" name="Answers[@i].Answer" class="form-control" />
+                    break;
+
+                case QuestionType.RadioButton:
+                    foreach (var opt in question.Options)
+                    {
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio"
+                                   name="Answers[@i].Answer" value="@opt.Text" id="opt_@opt.Id" />
+                            <label class="form-check-label" for="opt_@opt.Id">@opt.Text</label>
+                        </div>
+                    }
+                    break;
+
+                case QuestionType.Checkbox:
+                    foreach (var opt in question.Options)
+                    {
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                   name="Answers[@i].Answer" value="@opt.Text" id="opt_@opt.Id@i" />
+                            <label class="form-check-label" for="opt_@opt.Id@i">@opt.Text</label>
+                        </div>
+                    }
+                    break;
+            }
+
+        </div>
+    }
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
