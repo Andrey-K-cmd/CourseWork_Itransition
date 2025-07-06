@@ -117,22 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Create Form" xml:space="preserve">
-    <value>フォームの作成</value>
+  <data name="Add Multiple Options" xml:space="preserve">
+    <value>Add Multiple Options</value>
   </data>
-  <data name="Responses to my forms" xml:space="preserve">
-    <value>私のフォームへの応答</value>
+  <data name="Add One Option" xml:space="preserve">
+    <value>Add One Option</value>
   </data>
-  <data name="Sign up or log in to your account" xml:space="preserve">
-    <value>アカウントにサインアップまたはログインします</value>
+  <data name="Add Question" xml:space="preserve">
+    <value>Add Question</value>
+  </data>
+  <data name="Add Text Question" xml:space="preserve">
+    <value>Add Text Question</value>
+  </data>
+  <data name="Enter question" xml:space="preserve">
+    <value>Enter question</value>
+  </data>
+  <data name="Remove Questions" xml:space="preserve">
+    <value>Remove Questions</value>
+  </data>
+  <data name="Save Form" xml:space="preserve">
+    <value>Save Form</value>
   </data>
   <data name="Title" xml:space="preserve">
-    <value>タイトル</value>
+    <value>Title</value>
   </data>
-  <data name="You don't have any forms!" xml:space="preserve">
-    <value>あなたは何の形も持っていません！</value>
-  </data>
-  <data name="Your Forms" xml:space="preserve">
-    <value>あなたのフォーム</value>
+  <data name="Option" xml:space="preserve">
+    <value>Option</value>
   </data>
 </root>

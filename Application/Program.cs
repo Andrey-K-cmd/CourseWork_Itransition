@@ -1,4 +1,5 @@
 using Application.Data;
+using Application.Middleware;
 using Application.Models.User;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
@@ -72,6 +73,7 @@ namespace Application
 
             app.UseRouting();
 
+            app.UseMiddleware<UserBlockedMiddleware>();
             app.UseAuthorization();
 
             app.MapControllerRoute(

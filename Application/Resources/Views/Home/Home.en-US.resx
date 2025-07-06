@@ -117,4 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Create Form" xml:space="preserve">
+    <value>Create Form</value>
+  </data>
+  <data name="Responses to my forms" xml:space="preserve">
+    <value>Responses to my forms</value>
+  </data>
+  <data name="Sign up or log in to your account" xml:space="preserve">
+    <value>Sign up or log in to your account</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="You don't have any forms!" xml:space="preserve">
+    <value>You don't have any forms!</value>
+  </data>
+  <data name="Your Forms" xml:space="preserve">
+    <value>Your Forms</value>
+  </data>
 </root>

@@ -9,26 +9,27 @@
 {
     <form style="max-width: 300px; margin:auto; margin-top: 50px" method="post">
         <div class="mb-3 text-center">
-            <button type="submit" class="btn btn-primary" asp-controller="Form" asp-action="NewForm">Create Form</button>
+            <button type="submit" class="btn btn-primary" asp-controller="Form" asp-action="NewForm">@Localizer["Create Form"]</button>
         </div>
         <div class="mb-5 text-center">
-            <button type="submit" class="btn btn-primary" asp-controller="Form" asp-action="ViewFormResult">Responses to my forms</button>
+            <button type="submit" class="btn btn-primary" asp-controller="Form" asp-action="ViewFormResult">
+                @Localizer["Responses to my forms"]</button>
         </div>
     </form>
 
     @if (Model.Count == 0)
     {
-        <h4 class="text-center">You don't have any forms!</h4>
+        <h4 class="text-center">@Localizer["You don't have any forms!"]</h4>
     }
     else
     {
-        <h4 class="text-center mb-3">Your Forms</h4>
+        <h4 class="text-center mb-3">@Localizer["Your Forms"]</h4>
         <div class="table-responsive">
             <table class="table table-hover">
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Title</th>
+                        <th>@Localizer["Title"]</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -50,6 +51,6 @@
 }
 else
 {
-    <h4 class="text-center mt-5">Sign up or log in to your account</h4>
+    <h4 class="text-center mt-5">@Localizer["Sign up or log in to your account"]</h4>
 
 }

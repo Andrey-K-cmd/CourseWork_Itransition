@@ -8,7 +8,7 @@
 
 <div class="mb-3 d-flex align-items-center justify-content-between flex-wrap gap-2">
     <h2>@Model.Title</h2>
-    <h2 class="text-end">Author: @Model.User?.FullName</h2>
+    <h2 class="text-end">@Localizer["Author:"] @Model.User?.FullName</h2>
 </div>
 
 <form method="post">
@@ -53,5 +53,5 @@
         </div>
     }
 
-    <button type="submit" class="btn btn-primary" asp-controller="Form" asp-action="SaveResultForm">Submit</button>
+    <button type="submit" class="btn btn-primary" asp-controller="Form" asp-action="SaveResultForm">@Localizer["Submit"]</button>
 </form>

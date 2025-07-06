@@ -144,8 +144,6 @@ D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resource
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Home.Home.ja-JP.resources
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Settings.Settings.en-US.resources
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Settings.Settings.ja-JP.resources
-D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Shared._AccountLayout.en-US.resources
-D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Shared._AccountLayout.ja-JP.resources
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Shared._LoginPartial.en-US.resources
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Shared._LoginPartial.ja-JP.resources
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Account.Login.en-US.resources
@@ -156,3 +154,11 @@ D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.MvcAppli
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Admin.Admin.en-US.resources
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Admin.Admin.ja-JP.resources
 D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Form.CompiledForm.en-US.resources
+D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Form.CompiledForm.ja-JP.resources
+D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Form.NewForm.en-US.resources
+D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Form.NewForm.ja-JP.resources
+D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Form.ViewFormResult.en-US.resources
+D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Form.ViewFormResult.ja-JP.resources
+D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Shared._BackLayout.en-US.resources
+D:\Programo\Classes\CourseWork\Application\obj\Debug\net8.0\Application.Resources.Views.Shared._BackLayout.ja-JP.resources
