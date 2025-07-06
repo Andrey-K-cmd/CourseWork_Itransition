@@ -1,5 +1,5 @@
 ﻿@using Application.Models.Form;
-@model List<FormViewModel>
+@model List<FormModel>
 
 @{
     ViewData["Title"] = "Home Page";
@@ -8,8 +8,11 @@
 @if (User.IsInRole("User") || User.IsInRole("Admin"))
 {
     <form style="max-width: 300px; margin:auto; margin-top: 50px" method="post">
-        <div class="mb-5 text-center">
+        <div class="mb-3 text-center">
             <button type="submit" class="btn btn-primary" asp-controller="Form" asp-action="NewForm">Create Form</button>
+        </div>
+        <div class="mb-5 text-center">
+            <button type="submit" class="btn btn-primary" asp-controller="Form" asp-action="ViewFormResult">Responses to my forms</button>
         </div>
     </form>
 

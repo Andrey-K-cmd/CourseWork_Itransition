@@ -1,5 +1,5 @@
 ﻿@using Application.Enums
-@model Application.Models.Form.FormViewModel
+@model Application.Models.Form.FormModel
 
 @{
     ViewData["Title"] = "Fill Form";
@@ -53,5 +53,5 @@
         </div>
     }
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary" asp-controller="Form" asp-action="SaveResultForm">Submit</button>
 </form>

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Forms = Application.Models.Form;
 using System.Security.Claims;
 using Application.Controllers.Custom;
+using Application.Models.Answer;
 namespace Application.Controllers.Form
 {
     public class FormController : CustomController
@@ -18,14 +19,20 @@ namespace Application.Controllers.Form
 
         public IActionResult NewForm()
         {
-            return View(new Forms.FormViewModel());
+            return View(new Forms.FormModel());
         }
 
         [HttpPost]
-        public async Task<IActionResult> SaveForm(Forms.FormViewModel form)
+        public async Task<IActionResult> SaveForm(Forms.FormModel form)
         {
             form.UserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "";
-            ModelState.Remove("UserId");
+
+            if (string.IsNullOrEmpty(form.UserId))
+            {
+                return Unauthorized();
+            }
+
+            ModelState.Remove(nameof(form.UserId));
 
             if (ModelState.IsValid)
             {
@@ -57,15 +64,8 @@ namespace Application.Controllers.Form
         [HttpGet]
         public async Task<IActionResult> FindForm(string title)
         {
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-
-            if (userId == null)
-            {
-                return RedirectToAction("Home", "Home");
-            }
-
             var form = await _context.Forms
-                .FromSqlRaw("SELECT * FROM \"Forms\" WHERE \"TitleVector\" @@ plainto_tsquery({0}) AND \"UserId\" = {1}", title, userId)
+                .FromSqlRaw("SELECT * FROM \"Forms\" WHERE \"TitleVector\" @@ plainto_tsquery({0})", title)
                 .FirstOrDefaultAsync();
 
 
@@ -73,6 +73,64 @@ namespace Application.Controllers.Form
                 return RedirectToAction("Home", "Home");
 
             return RedirectToAction("CompiledForm", new { id = form.Id });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> SaveResultForm(FormResponseViewModel model)
+        {
+            var form = await _context.Forms
+                .Include(x => x.Questions)
+                .Include(x => x.User)
+                .FirstOrDefaultAsync(x => x.Id == model.FormId);
+
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (form == null || userId == null)
+            {
+                return NotFound();
+            }
+
+            foreach (var asn in model.Answers)
+            {
+                var answer = new Answer
+                {
+                    FormId = form.Id,
+                    UserId = userId,
+                    QuestionId = asn.QuestionId,
+                    AnswerText = asn.Answer
+                };
+
+                _context.Answers.Add(answer);
+            }
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Home", "Home");
+        }
+
+        public async Task<IActionResult> ViewFormResult(int formId)
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (userId == null)
+                return Unauthorized();
+
+            var myForms = await _context.Forms
+                .Where(f => f.UserId == userId)
+                .ToListAsync();
+
+            var formIds = myForms.Select(f => f.Id).ToList();
+
+            var answers = await _context.Answers
+                .Include(a => a.Question)
+                .Include(a => a.Form)
+                .Include(a => a.User)
+                .Where(a => formIds.Contains(a.FormId))
+                .OrderBy(a => a.FormId)
+                .ThenBy(a => a.UserId)
+                .ToListAsync();
+
+            return View("ViewFormResult", answers);
         }
     }
 }

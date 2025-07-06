@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Application.Models.Form
 {
-    public class FormViewModel
+    public class FormModel
     {
         public int Id { get; set; }
 
@@ -12,10 +12,10 @@ namespace Application.Models.Form
         public string Title { get; set; } = string.Empty;
 
         [Required]
-        public string UserId { get; set; } = string.Empty;
+        public string? UserId { get; set; }
 
         [ForeignKey("UserId")]
         public virtual UserModel? User { get; set; }
-        public virtual ICollection<QuestionViewModel> Questions { get; set; } = new List<QuestionViewModel>();
+        public virtual ICollection<QuestionModel> Questions { get; set; } = new List<QuestionModel>();
     }
 }

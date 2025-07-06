@@ -3,6 +3,7 @@ using System;
 using Application.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Application.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250706141449_CorrectingModels")]
+    partial class CorrectingModels
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -86,6 +89,34 @@ namespace Application.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("FormId")
+                        .HasColumnType("integer");
+
+                    b.Property<int?>("FormModelId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("Type")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FormModelId");
+
+                    b.ToTable("Questions");
+                });
+
+            modelBuilder.Entity("Application.Models.Form.QuestionModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
                     b.Property<int>("QuestionId")
                         .HasColumnType("integer");
 
@@ -98,31 +129,6 @@ namespace Application.Migrations
                     b.HasIndex("QuestionId");
 
                     b.ToTable("Options");
-                });
-
-            modelBuilder.Entity("Application.Models.Form.QuestionModel", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("FormId")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Text")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("Type")
-                        .HasColumnType("integer");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("FormId");
-
-                    b.ToTable("Questions");
                 });
 
             modelBuilder.Entity("Application.Models.User.UserModel", b =>
@@ -368,24 +374,20 @@ namespace Application.Migrations
 
             modelBuilder.Entity("Application.Models.Form.OptionModel", b =>
                 {
-                    b.HasOne("Application.Models.Form.QuestionModel", "Question")
+                    b.HasOne("Application.Models.Form.FormModel", null)
+                        .WithMany("Questions")
+                        .HasForeignKey("FormModelId");
+                });
+
+            modelBuilder.Entity("Application.Models.Form.QuestionModel", b =>
+                {
+                    b.HasOne("Application.Models.Form.OptionModel", "Question")
                         .WithMany("Options")
                         .HasForeignKey("QuestionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Question");
-                });
-
-            modelBuilder.Entity("Application.Models.Form.QuestionModel", b =>
-                {
-                    b.HasOne("Application.Models.Form.FormModel", "Form")
-                        .WithMany("Questions")
-                        .HasForeignKey("FormId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Form");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -444,7 +446,7 @@ namespace Application.Migrations
                     b.Navigation("Questions");
                 });
 
-            modelBuilder.Entity("Application.Models.Form.QuestionModel", b =>
+            modelBuilder.Entity("Application.Models.Form.OptionModel", b =>
                 {
                     b.Navigation("Options");
                 });

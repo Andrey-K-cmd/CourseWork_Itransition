@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\Programo\\Classes\\CourseWork\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\form\\viewformresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\form\\viewformresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\form\\compiledform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\form\\compiledform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\form\\newform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\form\\newform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\models\\form\\optionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\models\\form\\optionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\models\\form\\questionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\models\\form\\questionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\models\\form\\formmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\models\\form\\formmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\controllers\\form\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,40 +43,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CompiledForm.cshtml",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Form\\CompiledForm.cshtml",
-              "RelativeDocumentMoniker": "Application\\Views\\Form\\CompiledForm.cshtml",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Form\\CompiledForm.cshtml",
-              "RelativeToolTip": "Application\\Views\\Form\\CompiledForm.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Title": "ViewFormResult.cshtml",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Form\\ViewFormResult.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Form\\ViewFormResult.cshtml",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Form\\ViewFormResult.cshtml",
+              "RelativeToolTip": "Application\\Views\\Form\\ViewFormResult.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T15:48:53.895Z",
+              "WhenOpened": "2025-07-06T14:55:16.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "NewForm.cshtml",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Form\\NewForm.cshtml",
-              "RelativeDocumentMoniker": "Application\\Views\\Form\\NewForm.cshtml",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Form\\NewForm.cshtml",
-              "RelativeToolTip": "Application\\Views\\Form\\NewForm.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "Title": "CompiledForm.cshtml",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Form\\CompiledForm.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Form\\CompiledForm.cshtml",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Form\\CompiledForm.cshtml",
+              "RelativeToolTip": "Application\\Views\\Form\\CompiledForm.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T15:57:14.133Z",
+              "WhenOpened": "2025-07-06T14:40:06.271Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "FormController.cs",
               "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Controllers\\Form\\FormController.cs",
               "RelativeDocumentMoniker": "Application\\Controllers\\Form\\FormController.cs",
               "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Controllers\\Form\\FormController.cs",
               "RelativeToolTip": "Application\\Controllers\\Form\\FormController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwCsAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T15:52:37.625Z",
+              "WhenOpened": "2025-07-06T14:36:45.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormModel.cs",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\Form\\FormModel.cs",
+              "RelativeDocumentMoniker": "Application\\Models\\Form\\FormModel.cs",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\Form\\FormModel.cs",
+              "RelativeToolTip": "Application\\Models\\Form\\FormModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T14:39:36.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuestionModel.cs",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\Form\\QuestionModel.cs",
+              "RelativeDocumentMoniker": "Application\\Models\\Form\\QuestionModel.cs",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\Form\\QuestionModel.cs",
+              "RelativeToolTip": "Application\\Models\\Form\\QuestionModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T14:28:40.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OptionModel.cs",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\Form\\OptionModel.cs",
+              "RelativeDocumentMoniker": "Application\\Models\\Form\\OptionModel.cs",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\Form\\OptionModel.cs",
+              "RelativeToolTip": "Application\\Models\\Form\\OptionModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T14:28:30.909Z",
               "EditorCaption": ""
             }
           ]
