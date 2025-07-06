@@ -3,24 +3,40 @@
   "WorkspaceRootPath": "D:\\Programo\\Classes\\CourseWork\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\middleware\\userblockedmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\middleware\\userblockedmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\controllers\\admin\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\controllers\\admin\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\models\\user\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\models\\user\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\form\\viewformresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\form\\viewformresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\views\\form\\compiledform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\views\\form\\compiledform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\models\\form\\optionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\models\\form\\optionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\models\\form\\questionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\models\\form\\questionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\models\\form\\formmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\models\\form\\formmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|d:\\programo\\classes\\coursework\\application\\controllers\\form\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC1AE1F-CB6E-4265-83FE-4DDD904F935A}|Application\\Application.csproj|solutionrelative:application\\controllers\\form\\formcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +46,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserBlockedMiddleware.cs",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Middleware\\UserBlockedMiddleware.cs",
+              "RelativeDocumentMoniker": "Application\\Middleware\\UserBlockedMiddleware.cs",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Middleware\\UserBlockedMiddleware.cs",
+              "RelativeToolTip": "Application\\Middleware\\UserBlockedMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T18:29:31.354Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Application\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Application\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-15T15:14:32.663Z",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Controllers\\Admin\\AdminController.cs",
+              "RelativeDocumentMoniker": "Application\\Controllers\\Admin\\AdminController.cs",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Controllers\\Admin\\AdminController.cs",
+              "RelativeToolTip": "Application\\Controllers\\Admin\\AdminController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAowGIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T18:21:01.21Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Application\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Application\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\User\\UserModel.cs",
+              "RelativeDocumentMoniker": "Application\\Models\\User\\UserModel.cs",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\User\\UserModel.cs",
+              "RelativeToolTip": "Application\\Models\\User\\UserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T15:14:18.811Z",
+              "WhenOpened": "2025-07-06T18:20:50.079Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Application\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Application\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Title": "ViewFormResult.cshtml",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Form\\ViewFormResult.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Form\\ViewFormResult.cshtml",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Form\\ViewFormResult.cshtml",
+              "RelativeToolTip": "Application\\Views\\Form\\ViewFormResult.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-15T15:14:03.403Z",
+              "WhenOpened": "2025-07-06T14:55:16.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Application\\Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Application\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Title": "CompiledForm.cshtml",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Form\\CompiledForm.cshtml",
+              "RelativeDocumentMoniker": "Application\\Views\\Form\\CompiledForm.cshtml",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Views\\Form\\CompiledForm.cshtml",
+              "RelativeToolTip": "Application\\Views\\Form\\CompiledForm.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-15T15:13:49.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T14:40:06.271Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Program.cs",
-              "RelativeDocumentMoniker": "Application\\Program.cs",
-              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Program.cs",
-              "RelativeToolTip": "Application\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "FormController.cs",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Controllers\\Form\\FormController.cs",
+              "RelativeDocumentMoniker": "Application\\Controllers\\Form\\FormController.cs",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Controllers\\Form\\FormController.cs",
+              "RelativeToolTip": "Application\\Controllers\\Form\\FormController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T15:13:30.521Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-06T14:36:45.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormModel.cs",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\Form\\FormModel.cs",
+              "RelativeDocumentMoniker": "Application\\Models\\Form\\FormModel.cs",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\Form\\FormModel.cs",
+              "RelativeToolTip": "Application\\Models\\Form\\FormModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T14:39:36.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "QuestionModel.cs",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\Form\\QuestionModel.cs",
+              "RelativeDocumentMoniker": "Application\\Models\\Form\\QuestionModel.cs",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\Form\\QuestionModel.cs",
+              "RelativeToolTip": "Application\\Models\\Form\\QuestionModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T14:28:40.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OptionModel.cs",
+              "DocumentMoniker": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\Form\\OptionModel.cs",
+              "RelativeDocumentMoniker": "Application\\Models\\Form\\OptionModel.cs",
+              "ToolTip": "D:\\Programo\\Classes\\CourseWork\\Application\\Models\\Form\\OptionModel.cs",
+              "RelativeToolTip": "Application\\Models\\Form\\OptionModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T14:28:30.909Z"
             }
           ]
         }

@@ -1,0 +1,55 @@
+﻿@using Application.Models.Form;
+@model List<FormModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (User.IsInRole("User") || User.IsInRole("Admin"))
+{
+    <form style="max-width: 300px; margin:auto; margin-top: 50px" method="post">
+        <div class="mb-3 text-center">
+            <button type="submit" class="btn btn-primary" asp-controller="Form" asp-action="NewForm">Create Form</button>
+        </div>
+        <div class="mb-5 text-center">
+            <button type="submit" class="btn btn-primary" asp-controller="Form" asp-action="ViewFormResult">Responses to my forms</button>
+        </div>
+    </form>
+
+    @if (Model.Count == 0)
+    {
+        <h4 class="text-center">You don't have any forms!</h4>
+    }
+    else
+    {
+        <h4 class="text-center mb-3">Your Forms</h4>
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.Count; i++)
+                    {
+                        <tr>
+                            <td>@(i + 1)</td>
+                            <td>
+                                <a asp-controller="Form" asp-action="CompiledForm" asp-route-id="@Model[i].Id">
+                                    @Model[i].Title
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+}
+else
+{
+    <h4 class="text-center mt-5">Sign up or log in to your account</h4>
+
+}

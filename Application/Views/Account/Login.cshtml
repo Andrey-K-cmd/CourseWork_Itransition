@@ -1,0 +1,41 @@
+﻿@using Application.Models;
+@using Application.Models.Account
+@model LoginViewModel;
+@{
+    ViewData["Title"] = "Login Page";
+    Layout = "~/Views/Shared/_BackLayout.cshtml";
+}
+
+<form style="max-width: 300px; margin:auto; margin-top: 85px" asp-action="Login" method="post">
+    <h2 class="text-center">@Localizer["Log in to your account"]</h2>
+    <hr />
+    <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+    <div class="form-floating mb-3">
+        <input asp-for="Email" class="form-control" placeholder="Email" />
+        <label asp-for="Email" class="form-label">@Localizer["Email"]</label>
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-floating mb-3">
+        <input asp-for="Password" class="form-control" placeholder="Password" />
+        <label asp-for="Password" class="form-label">@Localizer["Password"]</label>
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <div class="checkbox mb-3">
+        <label class="form-label">
+            <input asp-for="RememberMe" class="form-check-input" />
+            @Html.DisplayNameFor(x => x.RememberMe);
+        </label>
+    </div>
+    <div>
+        <button class="w-100 btn btn-lg btn-primary mb-3">@Localizer["Log In"]</button>
+    </div>
+    <p class="text-center">
+        @Localizer["Don't have an acoount?"] <a asp-controller="Account" asp-action="Register" class="text-decoration-none">@Localizer["Register"]</a>
+    </p>
+</form>
+
+@section Scripts {
+@{
+        await Html.RenderPartialAsync("~/Views/Shared/_ValidationScriptsPartial.cshtml");
+    }
+}

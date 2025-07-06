@@ -1,0 +1,40 @@
+﻿@using Application.Models.Answer
+@model List<Answer>
+
+@{
+    ViewData["Title"] = "Answer to my Form";
+    Layout = "~/Views/Shared/_BackLayout.cshtml";
+}
+
+<h2 class="mb-4">Responses to my forms</h2>
+
+@if (!Model.Any())
+{
+    <p>No one has filled out your forms yet</p>
+}
+else
+{
+    var groupedByForm = Model.GroupBy(a => a.Form!.Title);
+
+    foreach (var formGroup in groupedByForm)
+    {
+        <h4 class="mt-4">@formGroup.Key</h4>
+
+        var groupedByUser = formGroup.GroupBy(a => a.User?.FullName);
+
+        foreach (var userGroup in groupedByUser)
+        {
+            <div class="border p-3 my-3 rounded">
+                <strong>Response from: @userGroup.Key</strong>
+                <ul>
+                    @foreach (var ans in userGroup)
+                    {
+                        <li>
+                            <strong>@ans.Question.Text</strong>: @ans.AnswerText
+                        </li>
+                    }
+                </ul>
+            </div>
+        }
+    }
+}
