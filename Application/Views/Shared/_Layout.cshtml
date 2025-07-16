@@ -10,6 +10,7 @@
     <title>@ViewData["Title"] - Application</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/darkly/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Application.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="@ViewData["Path"]" />
@@ -22,7 +23,7 @@
                     <i class="bi bi-layout-text-sidebar-reverse"></i> @Localizer["Forms"]
                 </span>
                 <form class="d-flex my-2 my-md-0" role="search" method="get" asp-controller="Form" asp-action="FindForm">
-                    <input class="form-control me-2 rounded-3" type="search" name="title" placeholder="@Localizer["Search"]" required />
+                    <input class="form-control me-2 rounded-3" type="search" name="title" id="searchInput" placeholder="@Localizer["Search"]" required />
                     <button class="btn btn-primary rounded-3 me-2" type="submit">@Localizer["Search"]</button>
                 </form>
 
@@ -37,6 +38,14 @@
                                 <i class="bi bi-gear"></i> @Localizer["Settings"]
                             </a>
                         </li>
+                        @if (User?.Identity?.IsAuthenticated == true)
+                        {
+                            <li>
+                                <a class="dropdown-item" asp-action="Integrate" asp-controller="Integration">
+                                    Integrate
+                                </a>
+                            </li>
+                        }
                         @if (User.IsInRole("Admin"))
                         {
                             <li>
@@ -59,7 +68,28 @@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        $(function () {
+            $("#searchInput").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: '/Form/Suggest',
+                        data: { term: request.term },
+                        success: function (data) {
+                            response(data);
+                        }
+                    });
+                },
+                minLength: 2,
+                select: function (event, ui) {
+                    $("#searchInput").val(ui.item.value);
+                }
+            });
+        });
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

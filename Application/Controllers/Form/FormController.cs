@@ -132,5 +132,18 @@ namespace Application.Controllers.Form
 
             return View("ViewFormResult", answers);
         }
+
+        public async Task<IActionResult> Suggest(string term)
+        {
+            var suggestion = await _context.Forms
+                .Where(x => EF.Functions.ILike(x.Title, $"%{term}%"))
+                .OrderBy(x => x.Title)
+                .Select(x => x.Title)
+                .Distinct()
+                .Take(10)
+                .ToListAsync();
+
+            return Json(suggestion);
+        }
     }
 }

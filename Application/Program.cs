@@ -17,8 +17,6 @@ namespace Application
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services.AddControllersWithViews();
-
             builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 
             builder.Services.AddControllersWithViews()
@@ -57,6 +55,8 @@ namespace Application
             }).AddEntityFrameworkStores<ApplicationDbContext>()
             .AddDefaultTokenProviders();
 
+            builder.Services.AddHttpClient();
+
             var app = builder.Build();
 
             var locOptions = app.Services.GetRequiredService<IOptions<RequestLocalizationOptions>>();
@@ -93,7 +93,6 @@ namespace Application
                     }
                 }
             }
-
                 app.Run();
         }
     }
